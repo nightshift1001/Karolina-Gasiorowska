@@ -14,93 +14,106 @@ layout: default
             </ul>
         </nav>
         <style>
-            article { background: rgba(255, 255, 255, 0); padding: 5%; }
-            .videoWrapper {
-                position: relative;
-                padding-bottom: 56.25%;
-                padding-top: 10px;
-                height: 0;
-            }
-            .videoWrapper iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-            </style>
+        article { background: rgba(255, 255, 255, 0); padding: 5%; }
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 10px;
+            height: 0;
+        }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        </style>
+        
     </header>
 
-<h1 align="center">The Archailect</h1>
-
     <!-- Main -->
+    <h1 align="center">Karo Gasiorowska</h1>
+
     <div id="main">
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-        </article>
-        {% endif %}
-        {% endfor %}
-    </div>
 
-    <div>
-        <article>
+            {% for image in site.static_files %}
+            {% if image.path contains 'fulls' %}
+            <article class="thumb">
+                <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                         data-name="{{ image.name }}"/></a>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <div>
+                <article>
+               
+                       <div class="videoWrapper">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/5ua4LvHDkQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+                       </div>
+                       
+                       <div class="videoWrapper">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/pmlRrFRqXXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+                       </div>
+                       
+                       <div class="videoWrapper">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/D7cXLJrMHOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+                       </div>
+                       
+                       <div class="videoWrapper">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/hbh7aOCy8Cc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+                       </div>
+                       
+                       <div class="videoWrapper">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/gIe-sW7CiRg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+                           </div>
        
-               <div class="videoWrapper">
-                       <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?loop=1&list=PLjDFQ8tkOp2OGrMVN_kH89jNDRLnp4TnP" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
-               </div>
-
-       </article>
-   </div>
+               </article>
+           </div>
+       
 
     <!-- Footer -->
     <footer id="footer" class="panel">
-        <div>
+        <div class="inner split">
             <div>
                 <section>
                     <h2>{{ site.footer.name }}</h2>
                     <p>{{ site.footer.bio }}</p>
                 </section>
-                <section>
-                    <ul class="icons">
-                        {% if site.social_urls.twitter %}
-                            <li>
-                                <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter">
-                                    <span class="label">Twitter</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        
-                        {% if site.social_urls.youtube %}
-                            <li>
-                                <a href="{{ site.social_urls.youtube }}" class="icon fa-youtube">
-                                    <span class="label">Youtube</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        
-                        {% if site.social_urls.instagram %}
-                            <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
-                                    <span class="label">Instagram</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                    </ul>
-                </section>
                 
                 <section>
-                    British/Australian living in Germany, studying a Bachelor of Information Technology in Games Design and Development.
-                    I've spent 2019 developing 3D modeling proficiency and workflows, specifically for hard surface concept design. In this portfolio, I will publish the development of personal projects, as a means to record progress throughout my degree.
-                    Above are links to my Twitter where I regularly retweet inspiration from the 3D community and news about new software or workflows;
-                    Youtube where I post tutorials for Blender and Instagram where work in progress renders are shared. If you would like to contact me regarding freelance please contact me on Instagram or Twitter where we can exchange personal information.
-                    Softwares of Interest and study:
-                    Blender 2.8, HardOps, Boxcutter, MeshMachine, Moi3D and Unreal Engine using C++   
-                </section>
-            
+                        <ul class="icons">
+                            {% if site.social_urls.twitter %}
+                                <li>
+                                    <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter">
+                                        <span class="label">Twitter</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            
+                            {% if site.social_urls.youtube %}
+                                <li>
+                                    <a href="{{ site.social_urls.youtube }}" class="icon fa-youtube">
+                                        <span class="label">Youtube</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            
+                            {% if site.social_urls.instagram %}
+                                <li>
+                                    <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
+                                        <span class="label">Instagram</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </section>
+                <section>
+                    <div>Hi my name is Karo, I'm a visual designer living Bochum, Germany. I'm currently Available for freelance work please send any enquiries to karo.gasiorowska@gmail.com.</div>
+                </section> 
                 <p class="copyright">
                     &copy; {{ site.author }}.
                 </p>
