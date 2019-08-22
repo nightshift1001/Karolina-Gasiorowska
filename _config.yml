@@ -1,15 +1,14 @@
 # Base configs
-baseurl: "http://thearchailect.me/"
+baseurl: "https://nightshift1001.github.io/Karolina-Gasiorowska/"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 
 # UI configs
-title: "The Archailect Portfolio"
-author: "The Archailect"
+title: "Karolina Gasiorowska"
+author: "Karolina Gasiorowska"
 
-title: "The Archailect"
-subtitle: "by The Archailect"
+title: "Karolina Gasiorowska"
+subtitle: "by Karolina Gasiorowska"
 social_urls:
-  youtube: "https://www.youtube.com/channel/UC2Of9mGeJqlWjFm15TSKLGQ"
-  twitter: "https://www.twitter.com/thearchailect"
-  instagram: "https://www.instagram.com/thearchailect"
+  youtube: "https://www.youtube.com/channel/UC4sHSkIs5wNrHCg05Yuj2pA"
+  instagram: "https://www.instagram.com/kvrogvsio/"
